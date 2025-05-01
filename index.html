@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Under Maintenance</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+    .container {
+      text-align: center;
+      padding: 30px;
+      background-color: #34495e;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+    .container h1 {
+      font-size: 48px;
+      margin: 0;
+      font-weight: bold;
+    }
+    .container p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+    .loader {
+      margin-top: 30px;
+      border: 8px solid rgba(255, 255, 255, 0.1);
+      border-top: 8px solid #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1.5s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #16a085;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #1abc9c;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>We'll be back soon!</h1>
+    <p>We're working hard to improve our site. Please check back later.</p>
+    
+    <div class="loader"></div>
+    
+    <p>If you need immediate assistance, please contact support at <a href="mailto:support@yourwebsite.com" style="color: #1abc9c;">support@yourwebsite.com</a>.</p>
+    
+    <a href="/" class="button">Go Home</a>
+  </div>
+
+</body>
+</html>
